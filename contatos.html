@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos Evilane evilane-vieira</title>
+     <link rel="stylesheet" href="style.css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body class="pagina-contatos">
+     <div class="menu-pagcontato">
+        <ul>
+           <li><a href="index.html" target="_blank" class="menu-link-contato">Início</a></li> 
+            <li><a href="index.html" target="_blank" class="menu-link-contato">Sobre</a></li>
+            <li><a href="projetos.html" target="_blank" id="projetos" class="menu-link">Projetos</a></li>
+            <li><a href="contatos.html" class="menu-link-contato">Contatos</a></li>
+        </ul>
+    </div>
+<main class="cabecalho-pagcontato">
+    <div>
+        <img src="Imagem/WhatsApp Image.jpeg" alt="Foto de Evilane Vieira" class="foto-contato" id="inicio" >
+        <h1 class="nome-pgcontato">Evilane Vieira</h1>
+    </div>
+
+     <p class="sou-pgcontato">Estudante de Análise e desenvolvimento de Sistemas</p> 
+</main>
+
+    <section class="cxcontato">
+  <form id="contatos">
+    <br><br>
+      <h1 class="ncontato">Entre em Contato</h1>
+      <table class="tabela">
+        <tr>
+          <th class="ntabelas" id="nome">Nome</th>
+          <td><input type="text" size="50"></td>
+        </tr>
+
+        <tr>
+          <th class="ntabelas" id="email">E-mail</th>
+          <td><input type="e-mail" size="50"></td>
+        </tr>
+
+        <tr>
+          <th class="ntabelas" id="telefone">Telefone </th>
+          <td><input type="tel" size="14" placeholder="(000)-000-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}" required></td>
+        </tr>
+
+        <tr>
+          <th class="ntabelas" id="mensagem">Mensagem </th>
+          <td><textarea rows="s" cols="50"></textarea></td>
+        </tr>
+
+        <tr>
+          <th></th>
+          <td><input type="submit" value="Enviar" class="botao" placeholder="Enviar"></td>
+        </tr>
+      </table>
+  </form>
+</section>
+
+ <nav class="btn-social" onsubmit="enviarwhats(event)">
+        <div class="redes">Redes Sociais :
+        <a href="https://www.linkedin.com/in/evilane-vieira/"><button><i class="bi bi-linkedin"></i></button></a>
+      <a href="mailto:${email}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}"" id="email"><button><i class="bi bi-envelope-at-fill"></i></button></a>
+        <a href="https://github.com/EvilaneSZ"><button><i class="bi bi-github"></i></button></a>
+        <a href="https://wa.me/351926293853" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
+        </div>
+      </nav>
+
+     <footer class="rodacx-contatos">
+        <p class="roda-contatos"> &copy;2025 Evilane Viera | RU - 4994798 | Todos os direitos reservados</p>
+     </footer>
+
+
+  </header>    
+    
+   <script>
+   function enviarwhats(event){
+     event.preventDefault()     
+     const nome = document.getElementById('nome').value;
+     const email = document.getElementById('email')
+     const telefone = '351926293853'
+     const mensagem = 'olá! como posso ajudar?' 
+     const url = `https://wa.me/${351926293853}?text=${encodeURIComponent(mensagem)}`;
+
+     window.open(url, "_blank"); 
+   }
+   function enviarEmail() {
+    const email = document.getElementById("email").value || "evilanepaulosousa@gmail.com";
+    const assunto = "Contato pelo site";
+    const corpo = "Olá, estou entrando em contato.";
+    const link = `mailto:${email}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
+    window.location.href = link;
+  }
+   </script
+</body>
+</html>
