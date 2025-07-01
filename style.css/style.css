@@ -11,22 +11,25 @@ header{
 
 }
 .menu{
-    padding: 0 0 7rem;
+    padding: 0 0 3rem;
 }
 
 .menu ul{ 
   font-size: large;
-  padding: 20px;
+  padding: irem;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   background-color: rgba(192, 114, 199, 0.2);
   justify-content: center;
+  gap: 1rem;
 }
 
 .menu-link{
     text-decoration: none;
-    padding: 1.6rem;
+    padding:0.8rem 1.2rem;
     color: blanchedalmond;
+    line-height: 60px;
 
     
 
@@ -42,14 +45,15 @@ width: 280PX;
 height: 280PX;
 border-radius: 50%;
 object-fit: cover;
+margin-top: 1rem;
     
 }
 
 .nome{
     text-align: center;
     color: antiquewhite;
-    font-size: 30px;
-    padding: 1rem 0 0;
+    font-size: 2rem;
+    padding-top:1rem;
 }
 
 .sou{
@@ -62,7 +66,7 @@ object-fit: cover;
   border-radius: 1.5rem;
   padding: 1.5rem;
   max-width: 850px;
-  margin: 15px auto;
+  margin: 50px auto;
 }
   
 
@@ -77,6 +81,8 @@ p{
     text-align: center;
     padding: 0  0 2rem;
 }
+
+
 .rodacx{
      background-color:rgba(192, 114, 199, 0.2);
      display: block;
@@ -95,8 +101,8 @@ p{
 /* Termina aqui a estilizaçao da pagina 1 */
 
 /*COMEÇA AQUI A ESTILIZAÇAO DA PÁGINA DE PROJETOS*/
-.pagina-projeto{
-    height: 100%;
+body.pagina-projeto{
+    min-height: 100vh;
     background-color:#5b3f74;
     text-align: center;
     padding: 0;
@@ -113,53 +119,63 @@ p{
 
 .menu-projeto ul{ 
   font-size: large;
-  padding: 20px;
+  padding:5px;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   background-color: rgba(192, 114, 199, 0.2);
   justify-content: center;
 }
 
+.projeto{
+    padding: 2rem 1 rem;
+}
 .menu-link-projeto{
     text-decoration: none;
-    padding: 1.6rem;
+    padding:1rem 1.5rem;
     color: blanchedalmond;
+    display: block;
+    transition: background 0.35 ease;
 }
 
 .h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 1rem;
+    font-size: 2rem;
     color:  rgb(251, 251, 70);
+    margin-bottom: 1rem;
        
     }
 
     .sub-projeto{
         font-family: 'Courier New', Courier, monospace;
-        padding: 23px;
+        padding: 1.5rem;
+        font-size: 2rem;
     }
     span{
        color: rgb(251, 251, 70);
  }
  #imagem-projeto{
-    width: 350px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 400%;
     display: block;
     margin: 60px auto;
+    height: auto;
  }
  .cxroda-projeto{
      background-color:rgba(192, 114, 199, 0.2);
-     padding: 0.2rem;
-     margin: top 0;;
+     padding: 2rem;
+     margin-top: auto;
  }
  .roda-projeto{
    color: rgb(242, 238, 246);
     text-align: center;
-    padding: 0;
+    font-size: 1rem;
+    padding: 0%;
  }
 
  /*Configuraçoes para página de contatos*/
 
-.pagina-contatos{
+body.pagina-contatos{
     height:100%;
     width: 100%;
     text-align: center;
@@ -188,6 +204,7 @@ p{
     text-decoration: none;
     padding: 1.5rem;
     color: blanchedalmond;
+
 }
 .foto-contato{
    width: 200px;
@@ -222,7 +239,8 @@ p{
  .rodacx-contatos{
      background-color:rgba(192, 114, 199, 0.2);
      padding: 0.2rem;
-     margin-top:0;
+     margin-top: auto;
+
  }
 
  .ncontato{
@@ -254,9 +272,12 @@ p{
 }
 
 .botao{
+    width:100%;
+    max-width: 200px;
+    margin-top: 10px;
     color: rgb(34, 3, 74);
-    font-size: large;
-    padding: 5px;
+    font-size: 1rem;
+    padding:10px;
     cursor: pointer;
 }
 .botao:hover{
@@ -265,15 +286,15 @@ p{
     border-bottom:solid  2px#fff ;
 }
 .btn-social{
-    padding: 1.5rem ;
-    position: relative;
-
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 0.5rem;
 }
 .btn-social button{
     width: 50px;
     height: 50px;
     font-size: 22px;
-    border: none;
     cursor: pointer;
     padding-top: 10px;
     margin: 0 3px;
@@ -285,9 +306,8 @@ p{
 
 .redes{
     color: #fff;
-    font-size: 20px;
+    font-size: 1.1rem;
     text-align: center;
-    position:static;
-    margin:auto;
+    margin-bottom: 0.5rem;
 }
 
