@@ -161,9 +161,8 @@ p{
 
 .pagina-contatos{
     height:100%;
-    min-height: 100vh;
+    width: 100%;
     text-align: center;
-    height: 100%;
     background-color:#5b3f74;
     padding: 0;
     margin: 0;
@@ -200,7 +199,7 @@ p{
 
 
 .cabecalho-pagcontato{
-    width: 100%
+    width: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -223,7 +222,7 @@ p{
  .rodacx-contatos{
      background-color:rgba(192, 114, 199, 0.2);
      padding: 0.2rem;
-     margin: top 0;;
+     margin-top:0;
  }
 
  .ncontato{
@@ -231,6 +230,7 @@ p{
     margin: auto 6.7rem;
  }
 
+ 
 .cxcontato{
  max-width: 600px; 
  margin: 0 auto;
@@ -251,7 +251,6 @@ p{
     padding: 8px;
     margin-bottom: 10px;
     padding-bottom: 5px;
-
 }
 
 .botao{
@@ -282,7 +281,6 @@ p{
 .btn-social button:hover{
     color:  #0d12ab;
     transform: scale(1.05);
-
 }
 
 .redes{
