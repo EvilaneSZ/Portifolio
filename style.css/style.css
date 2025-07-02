@@ -156,9 +156,9 @@ body.pagina-projeto{
  }
  #imagem-projeto{
     width: 100%;
-    max-width: 400%;
+    max-width: 100%;
     display: block;
-    margin: 60px auto;
+    margin: auto;
     height: auto;
  }
  .cxroda-projeto{
