@@ -65,7 +65,7 @@ margin-top: 1rem;
   border:2px solid rgb(40, 1, 53);
   border-radius: 1.5rem;
   padding: 1.5rem;
-  max-width: 850px;
+  max-width: 700px;
   margin: 50px auto;
 }
   
@@ -102,7 +102,7 @@ p{
 
 /*COMEÇA AQUI A ESTILIZAÇAO DA PÁGINA DE PROJETOS*/
 body.pagina-projeto{
-    min-height: 100vh;
+    min-height: 100%;
     background-color:#5b3f74;
     text-align: center;
     padding: 0;
@@ -163,7 +163,7 @@ body.pagina-projeto{
  }
  .cxroda-projeto{
      background-color:rgba(192, 114, 199, 0.2);
-     padding: 2rem;
+     padding:5px; 
      margin-top: auto;
  }
  .roda-projeto{
@@ -189,7 +189,6 @@ body.pagina-contatos{
 
 .menu-pagcontato{
     padding: 0 0 7rem;
-    flex-direction:column;
 }
 
 .menu-pagcontato ul{ 
@@ -202,7 +201,7 @@ body.pagina-contatos{
 }
 .menu-link-contato{
     text-decoration: none;
-    padding: 1.5rem;
+    padding: 1.2rem;
     color: blanchedalmond;
 
 }
@@ -238,7 +237,6 @@ body.pagina-contatos{
 }
  .rodacx-contatos{
      background-color:rgba(192, 114, 199, 0.2);
-     padding: 0.2rem;
      margin-top: auto;
 
  }
@@ -254,6 +252,8 @@ body.pagina-contatos{
  margin: 0 auto;
  padding: 20px;
  padding-top: 0px;
+ align-items: center;
+ text-align: center;
 }
 
 .tabela{
@@ -288,6 +288,7 @@ body.pagina-contatos{
 .btn-social{
    display: flex;
    flex-wrap: wrap;
+   justify-items: center;
    justify-content: center;
    gap: 0.5rem;
 }
